@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    @include m.tablet { 
+        gap: v.$sep20;
+    }
+    &__item{
+        display: flex;
+    }
+    &__item--actual{
+        border-block-end: 2px solid v.$blanco;
+    }
+    &__icono{
+        color: v.$blanco;
+    }
+    &__link{
+        color: v.$blanco;
+    }
+
+}

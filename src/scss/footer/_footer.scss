@@ -1,0 +1,93 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer{
+    background-color: v.$negro;
+    color: v.$blanco;
+    font-size: 13px;
+    &__contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: v.$sep40;
+        padding-block: v.$sep20;
+        @include m.tablet { 
+            @include m.grid (2, v.$sep40)
+        }
+    }
+}
+
+.pwa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: v.$sep10;
+    &__info{
+        margin: 0;
+    }
+    &__guia{
+        color: v.$blanco;
+    }
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: v.$sep10;
+    &__desarrollador,
+    &__cps{
+        margin: 0;
+    }
+    &__redes{
+        display: flex;
+        flex-direction: column;
+        gap: v.$sep5;
+        align-items: center;
+    }
+    &__red{
+        color: v.$blanco;
+        background-color: lighten(v.$negro, 10%);
+        padding: 0.1875rem;
+        border-radius: 5px;
+        &:first-child{
+            display: flex;
+            align-items: center;
+            gap: v.$sep5;
+            &::after{
+                content: "";
+                background-image: url(../img/instagram.png);
+                background-repeat: no-repeat;
+                width: 15px;
+                height: 15px;
+                background-size: cover;
+            }
+        }
+        &:last-child{
+            display: flex;
+            align-items: center;
+            gap: v.$sep5;
+            &::after{
+                content: "";
+                background-image: url(../img/twitter.png);
+                background-repeat: no-repeat;
+                width: 15px;
+                height: 15px;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+.creditos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block-end: v.$sep20;
+    &__credito{
+        color: v.$blanco;
+    }
+    &__pixabay{
+        margin: 0;
+    }
+}

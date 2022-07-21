@@ -1,0 +1,45 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.calculadora{
+    margin-block-start: v.$sep40;
+    padding-block-start: v.$sep20;
+    box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 35%);
+    @include m.desktop { 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &__header{
+        font-size: v.$font-size-md;
+        margin-block-end: v.$sep20;
+    }
+    &__input{
+        inline-size: 3.125rem;
+        border-radius: 5px;
+        &--error{
+            border-color: red;
+        }
+    }
+    &__btn{
+        background-color: v.$primario;
+        color: v.$blanco;
+        font-weight: 700;
+        border: none;
+        padding: v.$sep5;
+        border-radius: 5px;
+        &:hover{
+            background-color: lighten(v.$primario, 10%);
+        }
+    }
+    &:last-child{
+        margin-block-end: v.$sep40;
+    }
+    &__error{
+        border: 1px solid red;
+        inline-size: 80%;
+        margin-inline: auto;
+        border-radius: 5px;
+        color: red;
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Calculadora de procentajes - total, parte, todo">
+    <title>Porcentajes</title>
+    <link rel="shortcut icon" href="img/icons/icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,300&family=Spline+Sans+Mono:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="black">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__contenedor">
+            <h1 class="header__h1 text-center">Todo sobre porcentajes</h1>
+            <nav class="nav">
+                <div class="nav__item nav__item--actual">
+                    <a href="#" class="nav__link">Calculadora</a>
+                </div>
+                    <a href="https://porcentajes.netlify.app/aprender.html" class="nav__link">Aprender</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__contenedor">
+
+            <section class="calculadora">
+                <h2 class="calculadora__header text-center">Calcular porcentaje de un total</h2>
+                <div class="calculadora__form text-center"><label for="num1-1">El </label> <input class="calculadora__input" type="number" min="0" id="num1-1"><label for="num2-1">% de</label> <input class="calculadora__input" type="number" min="0" id="num2-1"> es <button id="calcular-1" class="calculadora__btn">Calcular</button></div>
+                <div class="resultado">
+                    <p class="resultado__heading text-center">Resultado:</p>
+                    <p class="resultado__contenido text-center" id="resultado-1">Aún no hay resultado</p>
+                </div>
+            </section>
+
+            <section class="calculadora">
+                <h2 class="calculadora__header text-center">Calcular el total conociendo una parte y que tanto porciento es</h2>
+                <div class="calculadora__form text-center"><label for="num1-2">--></label><input class="calculadora__input" type="number" min="0" id="num1-2">Es <label for="num2-2">el</label> <input class="calculadora__input" type="number" min="0" id="num2-2">% de <button id="calcular-2" class="calculadora__btn">Calcular</button></div>
+                <div class="resultado">
+                    <p class="resultado__heading text-center">Resultado:</p>
+                    <p class="resultado__contenido text-center" id="resultado-2">Aún no hay resultado</p>
+                </div>
+            </section>
+
+            <section class="calculadora">
+                <h2 class="calculadora__header text-center">Calcular el cuanto porciento es una parte de un total</h2>
+                <div class="calculadora__form text-center"><label for="num1-3">Cuánto % es</label> <input class="calculadora__input" type="number" min="0" id="num1-3"> <label for="num2-3">de</label> <input class="calculadora__input" type="number" min="0" id="num2-3"> <button id="calcular-3" class="calculadora__btn">Calcular</button></div>
+                <div class="resultado">
+                    <p class="resultado__heading text-center">Resultado:</p>
+                    <p class="resultado__contenido text-center" id="resultado-3">Aún no hay resultado</p>
+                </div>
+            </section>
+
+            <section class="calculadora">
+                <h2 class="calculadora__header text-center">Calcular un descuento</h2>
+                <div class="calculadora__form text-center"> <label for="num1-4">El</label> <input class="calculadora__input" type="number" min="0" id="num1-4"><label for="num2-4">% menos de</label> <input class="calculadora__input" type="number" min="0" id="num2-4"> es <button id="calcular-4" class="calculadora__btn">Calcular</button></div>
+                <div class="resultado">
+                    <p class="resultado__heading text-center">Resultado:</p>
+                    <p class="resultado__contenido text-center" id="resultado-4">Aún no hay resultado</p>
+                </div>
+            </section>
+
+            <section class="calculadora">
+                <h2 class="calculadora__header text-center">Calcular un aumento</h2>
+                <div class="calculadora__form text-center"> <label for="num1-5">El</label> <input class="calculadora__input" type="number" min="0" id="num1-5"><label for="num2-5">% más de</label> <input class="calculadora__input" type="number" min="0" id="num2-5"> es <button id="calcular-5" class="calculadora__btn">Calcular</button></div>
+                <div class="resultado">
+                    <p class="resultado__heading text-center">Resultado:</p>
+                    <p class="resultado__contenido text-center" id="resultado-5">Aún no hay resultado</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__contenedor">
+            <div class="pwa">
+                <p class="pwa__info text-center">Esta es una PWA(Progressive Web App) por lo que puedes instalarla y utilizarla fuera de línea</p>
+                <a target="_blank" class="pwa__guia" rel="noopener noreferrer" href="https://support.google.com/chrome/answer/9658361?hl=es&co=GENIE.Platform%3DDesktop">Guia de instalacion</a>
+            </div>
+    
+            <div class="contacto">
+                    <p class="contacto__desarrollador text-center">Por Ernesto López</p>
+                    <p class="contacto__cps text-center">Contacto - preguntas - sugerencias en:</p>
+                    <div class="contacto__redes">
+                        <a target="_blank" rel="noopener noreferrer" class="contacto__red" href="https://instagram.com/ernestolopez_degg?igshid=YmMyMTA2M2Y=">@ernestolopez_degg</a>
+                        <a target="_blank" rel="noopener noreferrer" class="contacto__red" href="https://twitter.com/ernestolop_degg?t=kjwhX2UywLsQFfSo3DhTPg&s=09">@ernestolop_degg</a>
+                    </div>
+            </div>
+        </div>
+        <div class="creditos">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.flaticon.es/iconos-gratis/instagram" title="instagram iconos" class="creditos__credito text-center" >Instagram ícono creados por Freepik - Flaticon</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.flaticon.es/iconos-gratis/gorjeo" title="gorjeo iconos" class="creditos__credito text-center">Gorjeo íconos creados por Pixel perfect - Flaticon</a>
+            <p class="text-center creditos__pixabay">Logo de <a class="creditos__credito" target="_blank" rel="noopener noreferrer" href="https://pixabay.com/es/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=589691">Gerd Altmann</a> en <a class="creditos__credito" target="_blank" rel="noopener noreferrer" href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=589691">Pixabay</a></p>
+            </div>
+    </footer> 
+
+    <script src="js/pwa.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

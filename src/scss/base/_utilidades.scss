@@ -1,0 +1,23 @@
+@use 'variables' as v;
+
+[class$="__contenedor"]{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+.vertical-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.semi-bold{
+    font-weight: 500;
+}
+
+.bold{
+    font-weight: 700;
+}
